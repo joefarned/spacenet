@@ -1,0 +1,7 @@
+Dependencies:
+PostGIS (raster2pgsql)
+
+To get started, run:
+./download.sh
+mkdir AOI_1_RIO/processedData/8band
+tar zxvf AOI_1_RIO/processedData/8band.tar.gz AOI_1_RIO/processedData/
