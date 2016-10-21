@@ -16,9 +16,9 @@ tile = cur.fetchone()[0]
 vsipath = '/vsimem/from_postgis'
 gdal.FileFromMemBuffer(vsipath, bytes(tile))
 ds = gdal.Open(vsipath)
-array = ds.GetRasterBand(1).ReadAsArray()
+array = ds.GetRasterBand(8).ReadAsArray()
 
-print(array)
+print(array.shape)
 
 gdal.Unlink(vsipath)
 
