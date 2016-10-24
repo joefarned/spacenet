@@ -25,9 +25,7 @@ def add_file(f):
 
             # Exception occuring here
             except psycopg2.DataError:
-                print(f)
-                print("error")
-
+                cur.execute("ROLLBACK")
 
     conn.commit()
 
