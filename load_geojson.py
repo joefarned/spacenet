@@ -15,8 +15,10 @@ def add_file(f):
         for j in xrange(len(data["features"][i]["geometry"]["coordinates"][0])):
             data["features"][i]["geometry"]["coordinates"][0][j].pop(2)
 
-        # Add into table
+        # Add SRID
         data["features"][i]["geometry"]["crs"] = {"type":"name","properties":{"name":"EPSG:4326"}}
+
+        # Insert into table
         if (data["features"][i]["geometry"]["type"] == "Polygon"):
 
             try:
