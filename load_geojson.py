@@ -6,6 +6,9 @@ import json
 
 # TODO: user-ize db + table
 
+def add_shape_file(f):
+    
+
 """ Handle GeoJSON from a single file single file """
 def add_file(f):
     with open(sys.argv[1] + '/' + f) as data_file:

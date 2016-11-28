@@ -144,7 +144,7 @@ def test_accuracy(classifier, lower_bound, num_test):
     f.add_subplot(1, 2, 1)
     plt.imshow(rgb/255)
     f.add_subplot(1, 2, 2)
-    plt.imshow(classification)
+    plt.imshow(test_labels)
     plt.show()
 
 def main():
